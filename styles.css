@@ -19,15 +19,6 @@ a {
     width: 300px;  /* Mantém a proporção da imagem */
 }
 
-
-/* logo wk */
-.logo-wk {
-    position: absolute; /* Mantém o posicionamento absoluto */
-    top: 120px; /* Distância do topo */
-    right: 170px; /* Distância da borda direita */
-    z-index: 3; /* Garante que a imagem fique sobre a imagem de fundo */
-}
-
 .logo-wk img {
     width: 150px; /* Ajuste o tamanho conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
@@ -72,8 +63,8 @@ nav ul {
 }
 
 nav ul li a {
-    font-family: "Roboto", serif;
-    font-size: 18px;
+    font-family: "Open sans", serif;
+    font-size: 14px;
     color: #fff;
     transition: transform 0.3s ease, color 0.3s ease; 
 }
@@ -86,29 +77,41 @@ nav ul li a:hover {
 
 /* Seção principal (inicio)*/
 .inicio {
-    height: 100vh;
+    height: 90vh;
     background-image: url("./img/mnmn.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
     text-align: left;
+    padding-top: 100px;
     padding-left: 80px;
 }
 
+.inicio-content .logo-wk {
+    align-self: flex-end;
+    padding-right: 48px;
+    margin-bottom: 22px;
+}
+
 .inicio-content {
+    padding-left: 32px;
+    gap: 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
     max-width: 1280px;
 }
 
 .inicio-content h1 {
-    font-family: "Roboto", serif;
+    font-family: "Open sans", serif;
     font-weight: bold;
     font-size: 32px;
     color: #fff;
-    max-width: 50%; 
-    padding-top: 200px;  /* Adiciona um espaço superior */
+    width: 65%; 
 }
 
 .inicio-content p {
@@ -116,9 +119,7 @@ nav ul li a:hover {
     font-size: 16px;
     text-align: justify;
     color: #fff;
-    max-width: 50%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    width: 65%;
 }
 
 .btn-saiba-mais {
@@ -142,14 +143,14 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 70px 60px 60px; /* Aumentei o padding-top para 250px */
+    padding: 70px 60px 60px;
     background-color: #F1F1F1;
     text-align: center;
     border-bottom: 3px solid #000822;
 }
 
 .sobre-nos h2 {
-    font-family: "Roboto", serif;
+    font-family: "Open sans", serif;
     font-weight: bold;
     font-size: 32px;
     padding-bottom: 20px;
@@ -223,7 +224,7 @@ nav ul li a:hover {
 }
 
 .servicos h2 {
-    font-family: "Roboto", serif;
+    font-family: "Open sans", serif;
     font-weight: bold;
     font-size: 32px;
     color: #F1F1F1;
@@ -297,7 +298,7 @@ nav ul li a:hover {
 }
 
 #parcerias h2{
-    font-family: "Roboto", serif; 
+    font-family: "Open sans", serif; 
     font-weight: bold;
     font-size: 33px;
     padding-bottom: 40px;
@@ -336,7 +337,7 @@ nav ul li a:hover {
 }
 
 .parceiro h3 {
-    font-family: "Roboto", serif; 
+    font-family: "Open sans", serif; 
     font-size: 18px;
     color: #000822;
     margin-bottom: 10px;
@@ -407,7 +408,7 @@ nav ul li a:hover {
 }
 
 h4 {
-    font-family: "Roboto", serif;
+    font-family: "Open sans", serif;
     font-size: 1.5rem;
     color: #fff;
     margin-bottom: 15px;
@@ -415,7 +416,7 @@ h4 {
 
 /* Informações da Empresa */
 .company-info p {
-    font-family: "Roboto", serif;
+    font-family: "Open sans", serif;
     font-size: 14px;
     color: #ccc;
     margin: 8px 0;
@@ -440,7 +441,7 @@ h4 {
 
 /* Especificamente para o campo de mensagem */
 .contact-form textarea {
-    font-family: "Roboto", serif;
+    font-family: "Open sans", serif;
     height: 100px; /* Define a altura do campo de mensagem */
     resize: vertical; /* Permite redimensionar a altura */
 }
@@ -480,7 +481,7 @@ h4 {
     }
 
     .header img {
-        width: 200px;
+        width: 180px;
     }
 
     .logo {
@@ -505,15 +506,25 @@ h4 {
     
     .inicio {
         height: 90vh;
-        padding: 10px 30px;
+        padding: 10px 20px;
     }
+
     .inicio h1 {
         font-size: 22px;
-        max-width: 100%;
+        width: 80%;
     }
-    .inicio p {
-        font-size: 16px;
-        max-width: 100%;
+
+    .inicio-content p {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .btn-saiba-mais {
+        font-size: 8px;
+    }
+
+    .inicio-content {
+        padding-top: 130px;
     }
 
     .sobre-nos {
@@ -613,23 +624,32 @@ h4 {
 
 @media (max-width: 445px) {
     .inicio {
-        height: 80vh;
+        height: 50vh;
+    }
+
+    .inicio-content .logo-wk {
+        padding-right: 0px;
     }
 
     .inicio a{
         font-size: 14px;
     }
 
+    .inicio-content {
+        padding: 130px 10px 0px 10px;
+    }
+
     .inicio-content h1 {
-        font-size: 17px;
-        text-align: left;
+        font-size: 16px;
+        width: 100%;
     }
     .inicio p {
-        font-size: 13px;
-        max-width: 100%;
+        font-size: 12px;
+        width: 100%;
     }
+
     .btn-saiba-mais {
-        font-size: 10px;
+        font-size: 8px;
     }
     .parcerias-list {
         display: flex;
