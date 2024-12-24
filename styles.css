@@ -615,6 +615,11 @@ h4 {
     .inicio {
         height: 80vh;
     }
+
+    .inicio a{
+        font-size: 14px;
+    }
+
     .inicio-content h1 {
         font-size: 17px;
         text-align: left;
