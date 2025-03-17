@@ -1,220 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softec Informática</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anta&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anta&family=Arimo:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anta&family=Arimo:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Softec Informática</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-aO8dF+XsdvQT9oY4P7ov75g8N9wA+UdkRVz5uN9Vf2dhkD30VtRF5zz+XXRTCLugZCeP3dK+6xB5S6V6OWfLbw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Cabeçalho com barra transparente -->
-    <header class="header">
-        <div class="logo">
-            <a href="#inicio">
-                <img src="./img/logo-softec.png" alt="Softec Informática">
-            </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre-nos">Sobre Nós</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#parcerias">Parcerias</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">
+        <img src="./img/logo-softec.png" alt="Softec Informática">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#parcerias">Parcerias</a>
+          </li>
         </ul>
-    </nav>
-</header>
+      </div>
+    </div>
+  </nav>
 
-    <section id="inicio" class="inicio">
-        <div class="inicio-content">
-            <div class="logo-wk">
-                <a href="https://wk.com.br" target="_blank">
-                    <img src="./img/Logo-ROXA.png" alt="Logo" class="logo-imagem">
-                </a>
-            </div>
-            <h1>Softec Informática: Transformando Desafios em Soluções Digitais</h1>
-            <p>
-                Soluções integradas em software e serviços para transformar gestão e performance com ERP robusto, módulos personalizados e resultados concretos.
-            </p>
-            <a href="#footer" class="btn-saiba-mais">FALE COM NOSSA EQUIPE</a>
+  <section id="inicio" class="inicio-section d-flex align-items-center min-vh-100">
+    <div class="container px-3">
+      <div class="row">
+        <!-- Remova ou ajuste a classe "titulo-container" se ela estiver limitando o subtítulo -->
+        <div class="col-lg-8 col-md-10 col-12 text-start text-light">
+          <h1 class="d-none d-md-block display-5 fw-bold mb-4 text-nowrap">Bem-Vindo À Softec Informática!</h1>
+          <h1 class="d-md-none display-5 fw-bold mb-4 text-nowrap">Bem-Vindo À Softec Informática!</h1>
+          <p class="lead mb-4 hero-subtitle">
+            Na Softec, somos especialistas em automação contábil, financeira, fiscal e patrimonial. Nossa missão é proporcionar eficiência, segurança e agilidade aos processos dos nossos clientes. Acreditamos que a tecnologia é uma aliada no crescimento e sucesso de cada empresa.
+          </p>
+          <a href="#footer" class="btn-saiba-mais">FALE COM NOSSA EQUIPE</a>
         </div>
-    </section>
-    <!-- Página Sobre Nós -->
-    <section id="sobre-nos" class="sobre-nos">
-        <div class="sobre-nos-inner">
-            <h2>Sobre Nós</h2>
-            <p>
-                Somos a Softec Informática, uma empresa que oferece soluções inovadoras no mercado de TI. Nossa missão é
-                oferecer serviços personalizados e de alta qualidade, sempre focados nas necessidades do cliente. Com
-                uma equipe altamente qualificada e dedicada, desenvolvemos softwares sob medida para atender às
-                necessidades específicas de nossos clientes, independentemente do setor de atuação.a Softec Informática,
-                uma empresa que oferece soluções inovadoras no mercado de TI. 
-            </p>
-            <div class="stats">
-                <div class="stat-item">
-                    <h3 data-target="3240" id="proj-concluidos">0</h3>
-                    <p>Projetos Concluídos</p>
-                </div>
-                <div class="stat-item">
-                    <h3 data-target="6847" id="clientes-atendidos">0</h3>
-                    <p>Clientes Atendidos</p>
-                </div>
-                <div class="stat-item">
-                    <h3 data-target="20" id="anos-experiencia">0</h3>
-                    <p>Anos de Experiência</p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  <!-- Seção Sobre Nós -->
+  <section id="sobre-nos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Nós</h2>
+      <p class="text-center">A Softec Informática, fundada em 1983, é referência em soluções digitais para automação contábil, financeira, fiscal e patrimonial.</p>
+    </div>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="servicos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Serviços</h2>
+      <p class="text-center">Conheça nossos serviços e como podemos ajudar a transformar seu negócio.</p>
+    </div>
+  </section>
+
+  <!-- Seção Parcerias -->
+  <section id="parcerias" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Parcerias</h2>
+      <p class="text-center">Descubra nossas parcerias estratégicas e os benefícios que elas trazem.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Informações da Empresa -->
+        <div class="col-md-4">
+          <h5>Informações da Empresa</h5>
+          <p><i class="fa-solid fa-location-dot"></i> Avenida Governador José Malcher, Belém-PA</p>
+          <p><i class="fa-solid fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fa-solid fa-envelope"></i> softec-pa@gmail.com</p>
         </div>
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section id="servicos" class="servicos">
-        <div class="container">
-            <h2>NOSSOS SERVIÇOS</h2>
-
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <img src="./img/popo.png" alt="Icone de Vendas">
-                    <h3>Vendas</h3>
-                    <p> Integração completa de processos comerciais, desde orçamentos até o faturamento, com automação de NF-e.
-                    </p>
-                </div>
-                <div class="servico-card">
-                    <img src="./img/icone2.png" alt="Icone de Finanças">
-                    <h3>Finanças</h3>
-                    <p> Controle financeiro com integração de vendas, compras e fluxo de caixa para decisões rápidas e assertivas. Relatórios precisos para otimização da gestão.</p>
-                </div>
-                <div class="servico-card">
-                    <img src="./img/icone3.png" alt="Icone de Gestão">
-                    <h3>GED</h3>
-                    <p>Gestão eletrônica de documentos, com fácil acesso e segurança, integrados aos processos empresariais. Eficiência no armazenamento e recuperação de informações.</p>
-                </div>
-                <div class="servico-card">
-                    <img src="./img/icone4.png" alt="Icone de Consultoria">
-                    <h3>Controladoria</h3>
-                    <p> Automação e integração contábil e fiscal, conforme normas legais, com módulos completos para compliance. Garantia de segurança e confiabilidade para os dados financeiros.</p>
-                </div>
-                <div class="servico-card">
-                    <img src="./img/icone5.png" alt="Icone de Suporte Técnico">
-                    <h3>Suporte Técnico</h3>
-                    <p> Gestão personalizada de contratos, ordens de serviço e assistência técnica para diferentes tipos de serviços. Suporte contínuo para a satisfação do cliente.</p>
-                </div>
-                <div class="servico-card">
-                    <img src="./img/icone6.png" alt="Icone de Infraestrutura">
-                    <h3>NF-E</h3>
-                    <p> Soluções flexíveis para emissão, gestão e recebimento de notas fiscais eletrônicas, com automação e segurança. Elimine erros e garanta o cumprimento das exigências fiscais.</p>
-                </div>
+        <!-- Formulário de Contato -->
+        <div class="col-md-4">
+          <h5>Entre em Contato</h5>
+          <form action="https://formspree.io/f/xnnqebdk" method="POST">
+            <div class="mb-3">
+              <input type="text" id="name" name="name" class="form-control" placeholder="Seu Nome" required>
             </div>
+            <div class="mb-3">
+              <input type="email" id="email" name="email" class="form-control" placeholder="Seu E-mail" required>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control" placeholder="Sua Mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
-    </section>
-
-    <!-- Página de Parcerias -->
-    <section id="parcerias">
-        <div class="container">
-            <h2>PARCERIAS</h2>
-            <p></p>
-
-            <div class="parcerias-list">
-
-                <!-- Parceria 1 -->
-                <div class="parceiro">
-                    <img src="./img/logo11.png" alt="Parceria 1">
-                    <h3>Parceria 1</h3>
-                    <p class="descricao">Descrição detalhada da parceria. Como essa colaboração beneficia nossos
-                        clientes e o mercado em geral.</p>
-                    <p class="feedback-parceria">"A parceria com a Softec Informática tem sido fundamental para o
-                        crescimento dos nossos negócios. A equipe é altamente capacitada e sempre entrega resultados
-                        excepcionais. Estamos empolgados com as futuras colaborações!"</p>
-                </div>
-
-                <!-- Parceria 2 -->
-                <div class="parceiro">
-                    <img src="./img/logo2.png" alt="Parceria 2">
-                    <h3>Parceria 2</h3>
-                    <p class="descricao">Descrição detalhada da parceria. Explicação sobre como a parceria agrega valor
-                        à Softec e aos nossos clientes.</p>
-                    <p class="feedback-parceria">"A Softec Informática tem sido uma parceira estratégica em nossos
-                        projetos. Juntos, conseguimos alcançar resultados impressionantes e proporcionar um valor
-                        significativo aos nossos clientes."</p>
-                </div>
-
-                <!-- Parceria 3 -->
-                <div class="parceiro">
-                    <img src="./img/logo3.png" alt="Parceria 3">
-                    <h3>Parceria 3</h3>
-                    <p class="descricao">Descrição detalhada da parceria. Explicação sobre como a parceria agrega valor
-                        à Softec e aos nossos clientes.</p>
-                    <p class="feedback-parceria">"A colaboração com a Softec tem sido essencial para o crescimento do
-                        nosso negócio. A equipe sempre demonstrou competência e compromisso com os resultados,
-                        garantindo uma parceria de sucesso."</p>
-                </div>
-
-                <!-- Parceria 3 -->
-                <div class="parceiro">
-                    <img src="./img/logo4.png" alt="Parceria 3">
-                    <h3>Parceria 4</h3>
-                    <p class="descricao">Descrição detalhada da parceria. Explicação sobre como a parceria agrega valor
-                        à Softec e aos nossos clientes.</p>
-                    <p class="feedback-parceria">"A colaboração com a Softec tem sido essencial para o crescimento do
-                        nosso negócio. A equipe sempre demonstrou competência e compromisso com os resultados,
-                        garantindo uma parceria de sucesso."</p>
-                </div>
-
-            </div>
+        <!-- Mapa -->
+        <div class="col-md-4">
+          <h5>Encontre-nos</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2878.9688700689835!2d-48.48605158276194!3d-1.4623102439213795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1734659584024!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </section>
-    <footer id="footer" class="footer">
-        <div class="inner-footer">
+      </div>
+    </div>
+  </footer>
 
-            <!-- Informações da Empresa -->
-            <div class="company-info">
-                <h4>Informações da Empresa</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Avenida Governador José Malcher, Belém PA</p>
-                <p><i class="fas fa-phone-alt"></i> (11) 1234-5678</p>
-                <p><i class="fas fa-envelope"></i> softec-pa@gmail.com</p>
-            </div>
-
-            <!-- Formulário de Contato -->
-            <div class="contact-form">
-                <h4>Entre em Contato Conosco!</h4>
-                <form action="https://formspree.io/f/xnnqebdk" method="POST">
-                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
-                    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-            <div class="location-map">
-                <h4>Encontre-nos Aqui</h4>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2878.9688700689835!2d-48.48605158276194!3d-1.4623102439213795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1734659584024!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </footer>
+  <!-- Bootstrap Bundle JS (inclui Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script para alterar cor da navbar ao rolar a página -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar-custom');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
-<script src="./script.js"></script>
-
 </html>

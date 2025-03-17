@@ -1,656 +1,102 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 50px;
-}
-* {
+    scroll-padding-top: 70px; /* Compensa a altura da navbar fixa */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: #A7A7A7;
-}
-
-.logo img {
-    width: 300px;  /* Mantém a proporção da imagem */
-}
-
-.logo-wk img {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Impede a imagem de ficar fora da div */
-}
-
-/* Cabeçalho com barra transparente */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    padding: 5px 30px;
-    background-color: #00000086;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    transition: background-color 0.3s;
-}
-
-.header.scrolled {
+  }
+  
+  /* Navbar customizada */
+  .navbar-custom {
+    background-color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+  }
+  .navbar-custom.scrolled {
     background-color: rgba(0, 8, 34, 1);
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav {
-    padding: 75px;  /* empurrar o conteúdo para dentro */
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 50px;
-}
-
-nav ul li a {
-    font-family: "Open sans", serif;
+  }
+  .navbar-custom .navbar-brand img {
+    width: 300px;
+  }
+  .navbar-custom .nav-link {
     font-size: 14px;
-    color: #fff;
-    transition: transform 0.3s ease, color 0.3s ease; 
-}
-
-nav ul li a:hover {
-    transform: translateY(-5px); 
-    color: #F1F1F1; 
-
-}
-
-.inicio {
-    height: 90vh;
-    background-image: url("./img/mnmn.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
-    text-align: left;
-    padding-top: 100px;
-    padding-left: 80px;
-}
-
-.inicio-content .logo-wk {
-    align-self: flex-end;
-    padding-right: 48px;
-    margin-bottom: 22px;
-}
-
-.inicio-content {
-    padding-left: 32px;
-    gap: 20px;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    max-width: 1280px;
-}
-
-.inicio-content h1 {
-    font-family: "Open sans", serif;
-    font-weight: bold;
-    font-size: 32px;
-    color: #fff;
-    width: 65%; 
-}
-
-.inicio-content p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    text-align: justify;
-    color: #fff;
-    width: 65%;
-}
-
-.btn-saiba-mais {
-    padding: 20px 30px;
-    background-color: #000822e6;
-    color: #ffffff96;
-    border-radius: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    text-transform: uppercase; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
-.btn-saiba-mais:hover {
-    background-color: #A7A7A7;
-    color: #000822;
-}
-
-.sobre-nos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #fff !important;
+    transition: color 0.3s ease;
+  }
+  .navbar-custom .nav-link:hover {
+    color: #F1F1F1 !important;
+  }
+  
+  /* Seção Início (Hero) */
+  .inicio-section {
     height: 100vh;
-    padding: 70px 60px 60px;
-    background-color: #F1F1F1;
-    text-align: center;
-    border-bottom: 3px solid #000822;
-}
-
-.sobre-nos h2 {
-    font-family: "Open sans", serif;
-    font-weight: bold;
-    font-size: 32px;
-    padding-bottom: 20px;
-    color: #000822;
-    text-transform: uppercase;
-}
-
-.sobre-nos p {
-    max-width: 1280px;
-    margin-top: 18px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    color: #333333;
-    text-align: center;
-    padding: 0 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-}
-
-.stats {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.stat-item {
-    text-align: center;
-    background-color: #d90a0a00;
-    padding: 20px;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-}
-
-.stat-item h3 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    color: #000822f1;
-    margin-top: 50px;
-}
-
-.stat-item p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    color: #000000;
-}
-
-/* Seção de Serviços */
-.servicos {
+    background: url('./img/mnmn.jpg') no-repeat center center;
+    background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #000822f1;
-    text-align: center;
-    padding-top: 50px; /* Aumenta o espaçamento no topo */
-}
-
-.servicos .container {
-    max-width: 1280px;
-    margin: auto;
-}
-
-.servicos {
-    padding: 100px 0;
-    background-color: #000822f1;
-    text-align: center;
-}
-
-.servicos h2 {
-    font-family: "Open sans", serif;
-    font-weight: bold;
-    font-size: 32px;
-    color: #F1F1F1;
-    text-align: center; 
-    width: 100%; 
-    margin-left: auto;  
-    margin-right: auto; 
-}
-
-.servicos p {
-    font-size: 20px;
-    color: #F1F1F1b4;
-}
-
-.servicos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px; 
-    justify-content: center;
-    max-width: 1280px; 
-    margin: 0 auto; 
-    padding: 50px 80px 0px 80px;
-}
-
-.servico-card {
-    width: 280px; 
-    background-color: #F1F1F1;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    padding: 30px;
-}
-
-.servico-card:hover {
-    transform: translateY(-10px);
-}
-
-.servico-card img {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
-.servico-card h3 {
-    font-size: 24px;
-    color: #000822;
-}
-
-.servico-card p {
-    margin-top: 8px;
-    font-size: 16px;
-    color: #6c6b6b;
+    margin-top: 70px;
+  }
+  
+  /* Limita a largura do bloco de conteúdo */
+  .titulo-container {
+    max-width: 600px; /* Ajuste conforme necessário */
+  }
+  .inicio-section h1 {
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.683);
+  }
+  /* Estilo personalizado para o subtítulo */
+  .hero-subtitle {
+    width: 100%;            /* Usa toda a largura disponível do elemento pai */
+    max-width: 740px;       /* Largura máxima definida */        /* Centraliza horizontalmente quando o pai tiver mais espaço */
+    font-size: 1.1rem;
+    line-height: 1.6;
     text-align: justify;
-}
-
-/* Estilos gerais */
-#parcerias {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F1F1F1; 
-    color: #333; 
-    padding-top: 50px; /* Aumentei o padding-top para descer o conteúdo */
-    padding-bottom: 80px; /* Ajuste do padding inferior */
-    font-family: "Open Sans", sans-serif;  
-}
-
-#parcerias .container {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#parcerias h2{
-    font-family: "Open sans", serif; 
-    font-weight: bold;
-    font-size: 33px;
-    padding-bottom: 40px;
-    color: #000822;  
-}
-
-#parcerias p {
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+  }
+  
+  
+  /* Botão "Fale com nossa equipe" */
+  .btn-saiba-mais {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #000822e6, #000822e6);
+    color: #ffffff96;
+    border: 2px solid transparent;
+    border-radius: 10px;
     font-size: 14px;
-    max-width: 240px;
-    color: #555;  
-    font-family: "Open Sans", sans-serif;  
-}
-
-/* Estilo para as parcerias */
-.parcerias-list {
-    display: flex;
-    padding: 0px 50px;
-    gap: 40px;
-}
-
-.parceiro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.parceiro img {
-    max-width: 75%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
-}
-
-.parceiro h3 {
-    font-family: "Open sans", serif; 
-    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-saiba-mais:hover,
+  .btn-saiba-mais:focus {
+    background: #a7a7a798;
     color: #000822;
-    margin-bottom: 10px;
-}
-
-/* Estilo para o parágrafo de descrição */
-.parceiro .descricao {
-    font-family: "Open Sans", sans-serif; 
-    font-size: 12px;
-    color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: justify; 
-}
-
-/* Estilo para feedbacks de parceria */
-.feedback-parceria {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    color: #777;  
-    font-style: italic;
-    margin-bottom: 10px;
-    margin-top: 15px;
-    text-align: justify;
-    transition: transform 0.3s ease-in-out; 
-}
-
-.feedback-parceria:hover {
-    transform: translateY(-5px); 
-    color: #000822;  
-}
-
-/* Estilo geral do footer */
-.footer {
-    background-color: #000822; 
+    border-color: #000822;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  
+  /* Seções genéricas */
+  section {
+    padding: 60px 0;
+  }
+  
+  /* Footer */
+  #footer {
+    background-color: #000822;
     color: #A7A7A7;
     padding: 40px 20px;
-}
-
-.inner-footer {
-    max-width: 1280px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between; /* Distribui as colunas */
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-/* Estilo das colunas */
-.company-info,
-.location-map {
-    width: 25%;
-    padding: 15px 0;
-    margin: 0 15px 20px;
-    background-color: #22222200; 
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form {
-    width: 40%;
-    padding: 15px;
-    margin: 0 15px 20px;
-    background-color: #22222200; 
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-h4 {
-    font-family: "Open sans", serif;
-    font-size: 1.5rem;
+  }
+  #footer h5 {
     color: #fff;
-    margin-bottom: 15px;
-}
-
-/* Informações da Empresa */
-.company-info p {
-    font-family: "Open sans", serif;
+  }
+  #footer p {
     font-size: 14px;
-    color: #ccc;
-    margin: 8px 0;
-}
-
-.company-info i {
-    margin-right: 10px;
-}
-
-/* Formulário de contato */
-.contact-form input,
-.contact-form textarea { /* Aplica estilo tanto para os inputs quanto para o textarea */
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #444;
-    border-radius: 5px;
-    background-color: #c8c8c800;
-    color: #fff;
-    font-size: 16px;
-}
-
-/* Especificamente para o campo de mensagem */
-.contact-form textarea {
-    font-family: "Open sans", serif;
-    height: 100px; /* Define a altura do campo de mensagem */
-    resize: vertical; /* Permite redimensionar a altura */
-}
-
-.contact-form button {
-    width: 50%;
-    padding: 10px;
-    background-color: #F1F1F1;
-    border: none;
-    border-radius: 5px;
-    color: #171616;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #b3b2b54d; 
-}
-
-/* Estilo do mapa de localização */
-.location-map iframe {
-    width: 80%;
-    height: 200px;
-    border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-
-    .header {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0px 10px;
-    }
-
-    .header img {
-        width: 180px;
-    }
-
-    .logo {
-        padding-top: 10px;
-    }
-
-    nav {
-        padding: 20px 10px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        gap: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header a {
-        font-size: 16px;
-    }
-    
-    .inicio {
-        height: 90vh;
-        padding: 10px 20px;
-    }
-
-    .inicio h1 {
-        font-size: 22px;
-        width: 80%;
-    }
-
-    .inicio-content p {
-        font-size: 12px;
-        width: 80%;
-    }
-
-    .btn-saiba-mais {
-        font-size: 8px;
-    }
-
-    .inicio-content {
-        padding-top: 130px;
-    }
-
-    .sobre-nos {
-        height: auto;
-        padding: 20px 10px;
-    }
-
-    .sobre-nos h2 {
-        margin-top: 18px;
-        font-size: 22px;
-    }
-
-    .sobre-nos-inner {
-        padding: 10px;
-    }
-
-    .sobre-nos-inner p {
-        font-size: 15px;
-    }
-
-    .stats {
-        padding-bottom: 25px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .servicos {
-        padding: 40px 20px;
-    }
-
-    .servicos-grid {
-        padding: 0px 20px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .servicos .servico-card {
-        width: 100%;
-    }
-
-    .servicos h2 {
-        font-size: 22px;
-    }
-
-    .servicos p {
-        font-size: 18x;
-    }
-
-    .container h1 {
-        font-size: 22px;
-        margin-bottom: 16px;
-    }
-
-    .parcerias-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        flex-wrap: wrap;
-        padding: 10px 20px;
-    }
-
-    .inner-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .inner-footer div {
-        box-shadow: none;
-        width: 100%;
-        padding: 0px;
-
-    }
-
-    .company-info,
-    .contact-form,
-    .location-map {
-        margin: 25px 0;
-    }
-
-    .inner-footer iframe {
-        width: 95%;
-    }
-
-    .contact-form form {
-        width: 100%;
-    }
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-
-}
-
-@media (max-width: 445px) {
-    .inicio {
-        height: 50vh;
-    }
-
-    .inicio-content .logo-wk {
-        padding-right: 0px;
-    }
-
-    .inicio a{
-        font-size: 14px;
-    }
-
-    .inicio-content {
-        padding: 130px 10px 0px 10px;
-    }
-
-    .inicio-content h1 {
-        font-size: 16px;
-        width: 100%;
-    }
-    .inicio p {
-        font-size: 12px;
-        width: 100%;
-    }
-
-    .btn-saiba-mais {
-        font-size: 8px;
-    }
-    .parcerias-list {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 20px;
-    }
-}
+  }
+  
