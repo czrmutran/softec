@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
         integrity="sha512-aO8dF+XsdvQT9oY4P7ov75g8N9wA+UdkRVz5uN9Vf2dhkD30VtRF5zz+XXRTCLugZCeP3dK+6xB5S6V6OWfLbw==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -47,12 +49,11 @@
   </nav>
 
   <section id="inicio" class="inicio-section d-flex align-items-center min-vh-100">
-    <div class="container px-3">
+    <div class="container px-5 px-md-3">
       <div class="row">
-        <!-- Remova ou ajuste a classe "titulo-container" se ela estiver limitando o subtítulo -->
         <div class="col-lg-8 col-md-10 col-12 text-start text-light">
-          <h1 class="d-none d-md-block display-5 fw-bold mb-4 text-nowrap">Bem-Vindo À Softec Informática!</h1>
-          <h1 class="d-md-none display-5 fw-bold mb-4 text-nowrap">Bem-Vindo À Softec Informática!</h1>
+          <h1 class="d-none d-md-block display-5 fw-bold mb-4 ">Bem-Vindo À Softec Informática!</h1>
+          <h1 class="d-md-none display-5 fw-bold mb-4 ">Bem-Vindo À Softec Informática!</h1>
           <p class="lead mb-4 hero-subtitle">
             Na Softec, somos especialistas em automação contábil, financeira, fiscal e patrimonial. Nossa missão é proporcionar eficiência, segurança e agilidade aos processos dos nossos clientes. Acreditamos que a tecnologia é uma aliada no crescimento e sucesso de cada empresa.
           </p>
@@ -62,24 +63,208 @@
     </div>
   </section>
   
-
-  
-
-  <!-- Seção Sobre Nós -->
-  <section id="sobre-nos" class="py-5">
+   <!-- Seção "Sobre Nós" -->
+   <section id="sobre-nos" class="sobre-nos">
     <div class="container">
-      <h2 class="text-center mb-4">Sobre Nós</h2>
-      <p class="text-center">A Softec Informática, fundada em 1983, é referência em soluções digitais para automação contábil, financeira, fiscal e patrimonial.</p>
+      <h2>SOBRE NÓS</h2>
+      <p>
+        A SOFTEC, fundada em 1983 em Belém-PA, iniciou suas atividades atendendo à área de desenvolvimento de softwares, 
+        e posteriormente passou a atuar na comercialização, implantação e treinamentos de aplicativos nas áreas Contábil, 
+        Financeira, Fiscal e Patrimonial.
+      </p>
+      <p>
+        Com diversos clientes atendidos, projetos concluídos e mais de 40 anos de experiência, a empresa acompanhou a evolução 
+        tecnológica de hardware e softwares, trabalhando para atender com eficiência e ética as empresas de diversas atividades 
+        no mercado.
+      </p>
+      <p>
+        Além disso, a Softec possui longa experiência no Terceiro Setor, oferecendo soluções para atender às exigências das entidades, 
+        seja para seus administradores, pesquisadores, financiadores, parceiros ou governo.
+      </p>
     </div>
   </section>
 
-  <!-- Seção Serviços -->
-  <section id="servicos" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Serviços</h2>
-      <p class="text-center">Conheça nossos serviços e como podemos ajudar a transformar seu negócio.</p>
+
+ <!-- Seção "Nossas Soluções" -->
+<section id="solucoes" class="nossas-solucoes py-5">
+  <div class="container text-center">
+    <!-- Cabeçalho da Seção -->
+    <div class="section-header mb-5">
+      <h2 class="section-title">NOSSAS SOLUÇÕES</h2>
+      <p class="section-subtitle">
+        Software completo com mais de 30 módulos, desenvolvido para atender as necessidades de empresas de todos os portes e segmentos.
+      </p>
     </div>
-  </section>
+    
+    <!-- Card com Descrição do ERP WK Radar -->
+    <div class="card mb-5 border-0 shadow-sm p-4">
+      <h5 class="card-title fw-bold">SISTEMA DE GESTÃO ERP WK RADAR</h5>
+      <p class="card-text text-justify">
+        O ERP que não é qualquer ERP! Trabalhamos para fazer a diferença na vida dos nossos clientes. Acompanhando a evolução tecnológica, desenvolvemos o Sistema ERP WK Radar: uma solução modular e escalável que integra todas as áreas de uma empresa.
+      </p>
+      <p class="card-text text-justify">
+        A WK disponibiliza modalidades diferenciadas do seu sistema ERP (Enterprise Resource Planning). As soluções possuem ferramentas e funcionalidades específicas conforme o estágio de maturidade de cada negócio, impulsionando e acompanhando o crescimento das empresas.
+      </p>
+      <a href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/" target="_blank" rel="noopener noreferrer" class="btn btn-solucoes mt-3">
+        Acessar Site Oficial da WK
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Seção "Áreas Atendidas" -->
+<section id="areas-atendidas" class="areas-atendidas mt-5">
+  <div class="container">
+    <h5 class="text-center mb-4">Conheça todas as áreas atendidas pelo ERP da WK:</h5>
+    <div class="row justify-content-center">
+      <!-- Vendas -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#vendas" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          Vendas
+        </a>
+      </div>
+      <!-- Serviços -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#servicos" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          Serviços
+        </a>
+      </div>
+      <!-- Finanças -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#financas" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-dollar-sign"></i>
+          Finanças
+        </a>
+      </div>
+      <!-- Materiais e Suprimentos -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#materiais" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-boxes-stacked"></i>
+          Materiais e Suprimentos
+        </a>
+      </div>
+      <!-- Industrial -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#industrial" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-industry"></i>
+          Industrial
+        </a>
+      </div>
+      <!-- Custos -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#custos" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-calculator"></i>
+          Custos
+        </a>
+      </div>
+      <!-- Controladoria -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#controladoria" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-briefcase"></i>
+          Controladoria
+        </a>
+      </div>
+      <!-- Recursos Humanos -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#rh" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-users"></i>
+          Recursos Humanos
+        </a>
+      </div>
+      <!-- Qualidade -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#qualidade" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-thumbs-up"></i>
+          Qualidade
+        </a>
+      </div>
+      <!-- GED -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#ged" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-file"></i>
+          GED
+        </a>
+      </div>
+      <!-- BI -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#bi" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-chart-line"></i>
+          BI
+        </a>
+      </div>
+      <!-- Apps -->
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+        <a 
+          href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#apps" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+        >
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          Apps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Seção Parcerias -->
   <section id="parcerias" class="py-5">
