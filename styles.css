@@ -109,7 +109,9 @@ html {
     
 /* Seção "Nossas Soluções" 1 */
 .nossas-solucoes {
-  background: linear-gradient(135deg, #E5E5E5, #FFFFFF);
+  background: linear-gradient(135deg, rgba(229, 229, 229, 0.708), rgba(255,255,255,0.9)),
+              url('./img/solucoes.svg') no-repeat center center;
+  background-size: cover;
   padding: 100px 20px;
 }
 
@@ -193,17 +195,58 @@ html {
   }
 }
 
-  
+#parcerias {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+#parcerias h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(0,8,34,1);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#parcerias p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Ajuste dos itens do Carousel */
+.carousel-inner .row {
+  margin: 0;
+}
+.carousel-item {
+  padding: 20px 0;
+}
+.carousel-item img {
+  max-height: 100px; /* Ajuste conforme necessário */
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+
   /* Footer */
-  #footer {
-    background-color: #000822;
-    color: #A7A7A7;
-    padding: 40px 20px;
-  }
   #footer h5 {
+    margin-bottom: 20px;
+  }
+  #footer p,
+  #footer a {
+    margin-bottom: 10px;
+  }
+  .footer-col {
+    margin-bottom: 20px;
+  }
+  .form-control {
+    margin-bottom: 10px;
+  }
+  /* Garante que o texto dos placeholders fique branco e bem visível */
+  .form-control::placeholder {
     color: #fff;
+    opacity: 1;
   }
-  #footer p {
-    font-size: 14px;
-  }
-  
