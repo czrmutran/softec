@@ -29,6 +29,16 @@ html {
   .navbar-custom .nav-link:hover {
     color: #F1F1F1 !important;
   }
+
+  .navbar-toggler {
+    border-color: #fff;
+    margin-left: auto; /* Garante que o botão fique à direita */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
   
   /* Seção Início (Hero) */
   .inicio-section {
@@ -187,6 +197,8 @@ html {
   gap: 8px;
 }
 
+
+
 /* Ajuste responsivo dos botões (caso necessário) */
 @media (max-width: 576px) {
   .btn.btn-solucoes {
@@ -250,3 +262,48 @@ html {
     color: #fff;
     opacity: 1;
   }
+  
+  @media (max-width: 576px) {
+    /* Centraliza os textos do cabeçalho da seção "Nossas Soluções" */
+    #solucoes .section-title,
+    #solucoes .section-subtitle {
+      text-align: center !important;
+    }
+    
+    /* Reordena os elementos da linha para que a coluna com a logo venha primeiro */
+    #solucoes .row.align-items-center {
+      flex-direction: column;
+    }
+    
+    /* Ajusta a coluna da logo: coloca-a acima e centraliza */
+    #solucoes .col-md-4 {
+      order: -1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    /* Reduz o tamanho da logo da WK */
+    #solucoes .col-md-4 img {
+      max-height: 40px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 576px) {
+    .navbar-custom .row,
+    .navbar-custom .col-6 {
+      margin: 0 !important;
+     
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    /* Se ainda houver espaço branco, tente forçar o container também */
+    .navbar-custom .container {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+    
+  
+  
