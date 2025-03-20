@@ -39,6 +39,16 @@ html {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
   
+  .navbar-custom .navbar-brand img {
+    width: 300px;
+  }
+  
+  /* Reduz o tamanho do logo em dispositivos móveis */
+  @media (max-width: 576px) {
+    .navbar-custom .navbar-brand img {
+      width: 200px;
+    }
+  }
   
   /* Seção Início (Hero) */
   .inicio-section {
@@ -290,20 +300,13 @@ html {
       margin-right: auto;
     }
   }
-  @media (max-width: 576px) {
-    .navbar-custom .row,
-    .navbar-custom .col-6 {
-      margin: 0 !important;
-     
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-    /* Se ainda houver espaço branco, tente forçar o container também */
-    .navbar-custom .container {
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-  }
-    
+ 
+
+
+
+
+
+
+
   
   
