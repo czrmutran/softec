@@ -394,6 +394,48 @@ transition: transform 1.5s;
     }
   }
  
+/* Define animações keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Aplica animações para dispositivos mobile */
+@media (max-width: 576px) {
+  /* Animação para as seções */
+  .inicio-section,
+  .sobre-nos,
+  .nossas-solucoes,
+  .areas-atendidas,
+  #diferenciais,
+  #parcerias,
+  #footer {
+    animation: fadeInUp 0.8s ease-out both;
+  }
+  
+  /* Animação para botões (ex.: Fale com nossa equipe e botões de soluções) */
+  .btn-saiba-mais,
+  .btn-solucoes {
+    animation: scaleIn 0.8s ease-out both;
+  }
+}
 
 
 
