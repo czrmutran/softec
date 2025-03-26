@@ -454,6 +454,39 @@
         navbar.classList.remove('scrolled');
       }
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+  // Aplica apenas se for mobile
+  if (window.innerWidth <= 576) {
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Adiciona a classe "animate" e um sufixo de animação de acordo com o tipo
+          entry.target.classList.add('animate');
+          // Se for um botão, adiciona a classe scaleIn, senão fadeIn
+          if (entry.target.classList.contains('btn-saiba-mais') ||
+              entry.target.classList.contains('btn-solucoes')) {
+            entry.target.classList.add('scaleIn');
+          } else {
+            entry.target.classList.add('fadeIn');
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Seleciona as seções desejadas
+    document.querySelectorAll(
+      '.inicio-section, .sobre-nos, .nossas-solucoes, .areas-atendidas, #diferenciais, #parcerias, #footer, .btn-saiba-mais, .btn-solucoes'
+    ).forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
   </script>
 </body>
 </html>
