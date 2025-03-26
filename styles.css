@@ -4,7 +4,7 @@ html {
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,11 +83,11 @@ html {
     display: inline-block;
     padding: 12px 20px;
     background: linear-gradient(135deg, #000822e6, #000822e6);
-    color: #ffffff96;
+    color: #ffffff;
     border: 2px solid transparent;
     border-radius: 10px;
     font-size: 14px;
-    font-weight: bold;
+
     text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -95,7 +95,7 @@ html {
   
   .btn-saiba-mais:hover,
   .btn-saiba-mais:focus {
-    background: #a7a7a798;
+    background: #ffffff;
     color: #000822;
     border-color: #000822;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -120,7 +120,7 @@ html {
       text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
     .sobre-nos p {
-      text-align: justify;
+  
       font-size: 16px;
       line-height: 1.8;
       margin-bottom: 20px;
@@ -132,7 +132,7 @@ html {
   background: linear-gradient(135deg, rgba(229, 229, 229, 0.708), rgba(255,255,255,0.9)),
               url('./img/solucoes.svg') no-repeat center center;
   background-size: cover;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .nossas-solucoes .container {
@@ -158,7 +158,6 @@ html {
 }
 
 .nossas-solucoes p {
-  text-align: justify;
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
@@ -180,11 +179,34 @@ html {
   color: #fff;
   text-decoration: none;
 }
+
+#areas-atendidas .container {
+  max-width: 900px;
+  margin: 0 auto; /* Centraliza o container */
+  padding: 80px 20px;
+}
+
     
-/* Cards para áreas atendidas */
+.areas-atendidas .btn.btn-solucoes {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 120px;       /* Largura reduzida */
+  height: 120px;      /* Altura reduzida */
+  padding: 10px;      /* Espaçamento interno menor */
+  aspect-ratio: 1 / 1;/* Mantém o formato quadrado */
+  
+}
+
+.areas-atendidas .btn.btn-solucoes i {
+  font-size: 1.5rem;  /* Ícone um pouco menor */
+  margin-bottom: 6px; /* Espaço entre o ícone e a legenda */
+}
+
+
 .areas-atendidas {
   background-color: #fff;
-  padding: 20px 20px;
 }
 
 .areas-atendidas h5 {
@@ -217,9 +239,38 @@ html {
   }
 }
 
+#diferenciais {
+  background-color: rgba(0, 8, 34, 1); /* Mesma cor do rodapé */
+  padding: 80px 20px;
+}
+#diferenciais .text-white {
+  color: #fff;
+}
+#diferenciais h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+#diferenciais p.lead {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #F1F1F1;
+}
+
+#diferenciais .card-body {
+  text-align: center;
+}
+#diferenciais .card-body i {
+  font-size: 3rem;
+  color: rgba(0, 8, 34, 1);
+  margin-bottom: 15px;
+}
+
 #parcerias {
   background-color: #fff;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 #parcerias h2 {
@@ -238,22 +289,64 @@ html {
   color: #333;
   margin-bottom: 30px;
 }
-
-/* Ajuste dos itens do Carousel */
-.carousel-inner .row {
-  margin: 0;
-}
-.carousel-item {
-  padding: 20px 0;
-}
-.carousel-item img {
-  max-height: 100px; /* Ajuste conforme necessário */
-  object-fit: contain;
+.partner-logo {
+  transition: transform 0.3s ease;
+  max-height: 100px;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
+/* Estilização dos Flip Cards */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+}
+
+.flip-card-back {
+  background-color: rgba(0, 8, 34, 1);
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+
 
   /* Footer */
+  #footer{
+    background-color:rgba(0, 8, 34, 1) ;
+  }
   #footer h5 {
     margin-bottom: 20px;
   }

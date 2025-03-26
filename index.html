@@ -6,19 +6,18 @@
   <title>Softec Informática</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
         integrity="sha512-aO8dF+XsdvQT9oY4P7ov75g8N9wA+UdkRVz5uN9Vf2dhkD30VtRF5zz+XXRTCLugZCeP3dK+6xB5S6V6OWfLbw==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand" href="#inicio">
@@ -31,18 +30,12 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#inicio">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sobre-nos">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#solucoes">Soluções</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#parcerias">Parcerias</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-nos">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#areas-atendidas">Áreas Atendidas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+          <li class="nav-item"><a class="nav-link" href="#parcerias">Parcerias</a></li>
         </ul>
       </div>
     </div>
@@ -87,7 +80,7 @@
 
 
  <!-- Seção "Nossas Soluções" -->
- <section id="solucoes" class="nossas-solucoes py-5">
+ <section id="solucoes" class="nossas-solucoes py-9">
   <div class="container">
     <!-- Cabeçalho com logo -->
     <div class="row align-items-center mb-3">
@@ -122,147 +115,147 @@
 <!-- Seção "Áreas Atendidas" -->
 <section id="areas-atendidas" class="areas-atendidas mt-5">
   <div class="container">
-    <h5 class="text-center mb-4">Conheça todas as áreas atendidas pelo ERP da WK:</h5>
+    <h5 class="text-center mb-5">Conheça todas as áreas atendidas pelo ERP da WK:</h5>
     <div class="row justify-content-center">
       <!-- Vendas -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-de-vendas/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-cart-arrow-down"></i>
           Vendas
         </a>
       </div>
       <!-- Serviços -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-de-servicos/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-screwdriver-wrench"></i>
           Serviços
         </a>
       </div>
       <!-- Finanças -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-de-financas/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-dollar-sign"></i>
           Finanças
         </a>
       </div>
       <!-- Materiais e Suprimentos -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-de-suprimentos/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-boxes-stacked"></i>
           Materiais e Suprimentos
         </a>
       </div>
       <!-- Industrial -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/erp/industria/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-industry"></i>
           Industrial
         </a>
       </div>
       <!-- Custos -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#custos" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-calculator"></i>
           Custos
         </a>
       </div>
       <!-- Controladoria -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-de-controladoria/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-briefcase"></i>
           Controladoria
         </a>
       </div>
       <!-- Recursos Humanos -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-de-rh/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-users"></i>
           Recursos Humanos
         </a>
       </div>
       <!-- Qualidade -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-da-qualidade/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-thumbs-up"></i>
           Qualidade
         </a>
       </div>
       <!-- GED -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao/gestao-ged/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-file"></i>
           GED
         </a>
       </div>
       <!-- BI -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#bi" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-chart-line"></i>
           BI
         </a>
       </div>
       <!-- Apps -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+      <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center align-items-center">
         <a 
           href="https://wk.com.br/solucao-erp/sistema-erp-wk-radar/#apps" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center gap-2"
+          class="btn btn-solucoes w-100 d-flex align-items-center justify-content-center"
         >
           <i class="fa-solid fa-mobile-screen-button"></i>
           Apps
@@ -271,60 +264,129 @@
     </div>
   </div>
 </section>
-
-
-<!-- Seção Parcerias -->
-<section id="parcerias" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">NOSSOS PARCEIROS</h2>
-    <p class="text-center mb-5">
-      Conheça as instituições e parceiros estratégicos que colaboram com a nossa trajetória.
-    </p>
-    
-    <!-- Carousel de Logotipos -->
-    <div id="parceirosCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-6 col-md-3">
-              <img src="img/logo2.png" class="d-block w-100" alt="Associação SOS Amazônia">
-            </div>
-            <div class="col-6 col-md-3">
-              <img src="img/logo4.png" class="d-block w-100" alt="Instituto de Estudos Socioeconômicos – INESC">
-            </div>
-            <div class="col-6 col-md-3">
-              <img src="img/logo11.png" class="d-block w-100" alt="Instituto Floresta Tropical – IFT">
-            </div>
-            <div class="col-6 col-md-3">
-              <img src="img/logo11.png" class="d-block w-100" alt="Instituto do Homem e Meio Ambiente da Amazônia – IMAZON">
-            </div>
-          </div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-6 col-md-3">
-              <img src="img/logo3.png" class="d-block w-100" alt="Instituto Internacional de Educação do Brasil – IIEB">
-            </div>
-            <!-- Caso tenha mais logos, adicione aqui -->
+<!-- Nova Seção: Diferenciais (Página Criativa) -->
+<section id="diferenciais">
+  <div class="container px-5">
+    <div class="text-center text-white mb-2">
+      <h2>POR QUE ESCOLHER A SOFTEC?</h2>
+      <p class="lead">Inovação, eficiência e suporte especializado para transformar o seu negócio.</p>
+    </div>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-rocket"></i>
+            <h5 class="card-title">Inovação</h5>
+            <p class="card-text">Tecnologia de ponta que impulsiona sua empresa.</p>
           </div>
         </div>
       </div>
-      <!-- Controles do Carousel -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#parceirosCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#parceirosCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-chart-line"></i>
+            <h5 class="card-title">Crescimento</h5>
+            <p class="card-text">Resultados que refletem expansão e rentabilidade.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-shield-alt"></i>
+            <h5 class="card-title">Segurança</h5>
+            <p class="card-text">Proteção e confiabilidade para seus dados.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <i class="fa-solid fa-headset"></i>
+            <h5 class="card-title">Suporte</h5>
+            <p class="card-text">Atendimento especializado sempre à disposição.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<footer id="footer" class="bg-dark text-light py-5">
+<!-- Seção Parcerias - Flip Cards -->
+<section id="parcerias" class="py-5 ">
+  <div class="container px-5">
+    <h2 class="text-center mb-4">NOSSOS PARCEIROS</h2>
+    <p class="text-center mb-5">
+      Conheça as instituições e parceiros estratégicos que colaboram com a nossa trajetória.
+    </p>
+    <div class="row g-4">
+      <!-- Parceiro 1 -->
+      <div class="col-6 col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/logo2.png" alt="Associação SOS Amazônia" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h5>Associação SOS Amazônia</h5>
+              <a href="https://wk.com.br/parceiro1" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Parceiro 2 -->
+      <div class="col-6 col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/logo4.png" alt="Instituto de Estudos Socioeconômicos – INESC" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h5>Instituto INESC</h5>
+              <a href="https://wk.com.br/parceiro2" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Parceiro 3 -->
+      <div class="col-6 col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/logo11.png" alt="Instituto Floresta Tropical – IFT" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h5>Instituto IFT</h5>
+              <a href="https://wk.com.br/parceiro3" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Parceiro 4 -->
+      <div class="col-6 col-md-3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/logo11.png" alt="Instituto do Homem e Meio Ambiente da Amazônia – IMAZON" class="img-fluid">
+            </div>
+            <div class="flip-card-back">
+              <h5>IMAZON</h5>
+              <a href="https://wk.com.br/parceiro4" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Adicione mais parceiros conforme necessário -->
+    </div>
+  </div>
+</section>
+
+
+<footer id="footer" class=" text-light py-5">
   <div class="container">
     <div class="row">
       <!-- Informações -->
