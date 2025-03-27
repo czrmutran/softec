@@ -8,6 +8,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   /* Navbar customizada */
@@ -103,16 +104,18 @@ html {
     border: 2px solid transparent;
     border-radius: 10px;
     font-size: 14px;
-
+    font-weight: 600;
     text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none; /* Remove o sublinhado */
   }
+  
   
   .btn-saiba-mais:hover,
   .btn-saiba-mais:focus {
     background: #ffffff;
-    color: #000822;
+    color: #000000;
     border-color: #000822;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-decoration: none;
