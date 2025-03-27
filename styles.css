@@ -43,34 +43,40 @@ html {
     width: 300px;
   }
   .navbar-custom .btn-webmail-navbar {
-    background-color: #fff !important;       /* Fundo branco */
-    color: #000822 !important;                 /* Texto e ícone azul */
-    border: 1px solid #000822 !important;      /* Borda azul */
-    border-radius: 10px;
-    padding: 6px 12px;
-    margin-left: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #C8DAA9;
+    color: #000;
+    border: 1px solid #016e38;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin-left: 1rem;
   }
- 
-.navbar-custom .btn-webmail-navbar:hover {
-  background-color: #f1f1f1ba !important;      /* Leve mudança no fundo no hover */
-  color: #000822 !important;
-}
   
   /* Reduz o tamanho do logo em dispositivos móveis */
   @media (max-width: 576px) {
-    .navbar-custom .navbar-brand img {
-      width: 200px;
-    }
     .navbar-custom .btn-webmail-navbar {
-      background-color: transparent !important;
-      color: #fff !important;
+      background: none !important;
       border: none !important;
-      border-radius: 0;
-      padding: 0.5rem 1rem;
-      margin-left: 0;
+      padding: 0 !important;
+      margin-left: 0 !important;
+      font-size: 17px;
+      text-decoration: none;
+      color: #fff !important;
+    }
+    .navbar-custom .navbar-nav {
+      justify-content: flex-start;
+    }
+    /* Centraliza títulos e parágrafos no mobile */
+    h1, h2, h3, h4, h5, h6, p {
+      text-align: center !important;
+    }
+    
+    /* Se o container do botão for flex, forçamos o alinhamento à esquerda */
+    .navbar-custom .d-flex {
+      justify-content: flex-start !important;
     }
   }
+  
   
   /* Seção Início (Hero) */
   .inicio-section {
@@ -125,7 +131,7 @@ html {
   }
     /* Seção "Sobre Nós" */
     .sobre-nos {
-      background-color: #e20000;
+      background-color: #ffffff;
       padding: 80px 20px;
     }
     .sobre-nos .container {
