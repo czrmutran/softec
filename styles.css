@@ -16,7 +16,7 @@ html {
     transition: background-color 0.3s ease;
   }
   .navbar-custom.scrolled {
-    background-color: rgba(0, 8, 34, 1);
+    background-color: #000822;
   }
   .navbar-custom .navbar-brand img {
     width: 300px;
@@ -42,25 +42,13 @@ html {
   .navbar-custom .navbar-brand img {
     width: 300px;
   }
-  .navbar-custom .btn-webmail-navbar {
-    background-color: #C8DAA9;
-    color: #000;
-    border: 1px solid #016e38;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    margin-left: 1rem;
-  }
   
   /* Reduz o tamanho do logo em dispositivos móveis */
   @media (max-width: 576px) {
     .navbar-custom .btn-webmail-navbar {
-      background: none !important;
-      border: none !important;
       padding: 0 !important;
       margin-left: 0 !important;
       font-size: 17px;
-      text-decoration: none;
       color: #fff !important;
     }
     .navbar-custom .navbar-nav {
