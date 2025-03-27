@@ -62,6 +62,14 @@ html {
     .navbar-custom .navbar-brand img {
       width: 200px;
     }
+    .navbar-custom .btn-webmail-navbar {
+      background-color: transparent !important;
+      color: #fff !important;
+      border: none !important;
+      border-radius: 0;
+      padding: 0.5rem 1rem;
+      margin-left: 0;
+    }
   }
   
   /* Seção Início (Hero) */
