@@ -22,12 +22,12 @@ html {
     width: 300px;
   }
   .navbar-custom .nav-link {
-    font-size: 14px;
+    font-size: 17px;
     color: #fff !important;
     transition: color 0.3s ease;
   }
   .navbar-custom .nav-link:hover {
-    color: #F1F1F1 !important;
+    color: #f1f1f1ba !important;
   }
 
   .navbar-toggler {
@@ -42,6 +42,20 @@ html {
   .navbar-custom .navbar-brand img {
     width: 300px;
   }
+  .navbar-custom .btn-webmail-navbar {
+    background-color: #fff !important;       /* Fundo branco */
+    color: #000822 !important;                 /* Texto e ícone azul */
+    border: 1px solid #000822 !important;      /* Borda azul */
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+ 
+.navbar-custom .btn-webmail-navbar:hover {
+  background-color: #f1f1f1ba !important;      /* Leve mudança no fundo no hover */
+  color: #000822 !important;
+}
   
   /* Reduz o tamanho do logo em dispositivos móveis */
   @media (max-width: 576px) {
@@ -53,7 +67,7 @@ html {
   /* Seção Início (Hero) */
   .inicio-section {
     height: 100vh;
-    background: url('./img/mnmn.jpg') no-repeat center center;
+    background: url('./img/fundoHero.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -340,8 +354,6 @@ transition: transform 1.5s;
   color: #fff;
   transform: rotateY(180deg);
 }
-
-
 
   /* Footer */
   #footer{
