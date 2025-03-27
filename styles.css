@@ -164,7 +164,7 @@ html {
   font-size: 36px;
   font-weight: bold;
   color: rgba(0, 8, 34, 1);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -198,11 +198,24 @@ html {
   color: #fff;
   text-decoration: none;
 }
-
-#areas-atendidas .container {
-  max-width: 900px;
-  margin: 0 auto; /* Centraliza o container */
-  padding: 80px 20px;
+@media (max-width: 772px) {
+  /* Altera o layout da linha para coluna */
+  #solucoes .row.align-items-center {
+    flex-direction: column;
+  }
+  /* Reordena a coluna da logo para aparecer primeiro e centraliza seu conteúdo */
+  #solucoes .col-md-4 {
+    order: -1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /* Ajusta a imagem, se necessário */
+  #solucoes .col-md-4 img {
+    max-height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
     
@@ -404,7 +417,7 @@ transition: transform 1.5s;
     
     /* Reduz o tamanho da logo da WK */
     #solucoes .col-md-4 img {
-      max-height: 40px;
+      max-height: 30px;
       display: block;
       margin-left: auto;
       margin-right: auto;
