@@ -493,6 +493,20 @@ transition: transform 1.5s;
     animation: scaleIn 0.8s ease-out both;
   }
 }
+/* Centralizar todos os botões do rodapé em mobile */
+@media (max-width: 576px) {
+  #footer .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #footer form {
+    text-align: center;
+  }
+}
 
 
 
