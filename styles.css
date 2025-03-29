@@ -508,6 +508,12 @@ transition: transform 1.5s;
   }
 }
 
+@media (max-width: 576px) {
+  #footer a[href^="tel:"] {
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+}
 
 
 
