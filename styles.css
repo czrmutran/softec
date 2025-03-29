@@ -43,6 +43,22 @@ html {
   .navbar-custom .navbar-brand img {
     width: 300px;
   }
+  @media (max-width: 400px) {
+    .navbar-custom .navbar-brand img {
+      width: 250px !important; /* reduz significativamente a logo */
+      margin-left: 14px;
+    }
+  
+    .navbar-custom .navbar-toggler {
+      padding: 6px 10px !important;
+      font-size: 1rem !important; /* reduz tamanho do botão */
+      margin-left: 25px !important; /* reduz a margem para garantir alinhamento lateral */
+    }
+  
+    .navbar-custom .container {
+      padding: 0 8px !important; /* reduz padding lateral do container */
+    }
+  }
   
   /* Reduz o tamanho do logo em dispositivos móveis */
   @media (max-width: 576px) {
