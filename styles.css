@@ -499,7 +499,7 @@ gap: 8px;
 }
 
 #diferenciais {
-background-color: rgb(34, 0, 5); /* Mesma cor do rodapé */
+background-color: rgba(0, 8, 34, 1); /* Mesma cor do rodapé */
 padding: 80px 20px;
 }
 #diferenciais .text-white {
