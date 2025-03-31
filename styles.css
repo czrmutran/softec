@@ -41,7 +41,7 @@ body {
 }
 
 .navbar-custom .navbar-brand img {
-  width: 300px;
+  width: 200px;
 }
 @media (max-width: 400px) {
   .navbar-custom .navbar-brand img {
@@ -52,7 +52,7 @@ body {
   .navbar-custom .navbar-toggler {
     padding: 6px 10px !important;
     font-size: 1rem !important; /* reduz tamanho do botão */
-    margin-left: 25px !important; /* reduz a margem para garantir alinhamento lateral */
+    margin-left: 35px !important; /* reduz a margem para garantir alinhamento lateral */
   }
 
   .navbar-custom .container {
