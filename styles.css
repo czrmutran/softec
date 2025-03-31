@@ -476,7 +476,6 @@ margin-bottom: 30px;
 text-transform: uppercase;
 }
 
-
 .btn.btn-solucoes {
 padding: 12px 20px;
 font-size: 14px;
@@ -510,14 +509,12 @@ font-size: 30px;
 font-weight: bold;
 margin-bottom: 20px;
 letter-spacing: 2px;
-text-align: center;
 }
 
 #diferenciais p.lead {
 font-size: 16px;
 margin-bottom: 30px;
 color: #F1F1F1;
-text-align: center;
 }
 
 #diferenciais .card-body {
@@ -652,8 +649,6 @@ transform: rotateY(180deg);
     margin-right: auto;
   }
 }
-
-
 
 
 

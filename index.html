@@ -320,74 +320,114 @@
   </div>
 </section>
 
-<!-- Seção Parcerias - Flip Cards -->
-<section id="parcerias" class="py-5 ">
-  <div class="container px-5">
-    <h2 class="text-center mb-4">NOSSOS PARCEIROS</h2>
-    <p class="text-center mb-5">
-      Conheça as instituições e parceiros estratégicos que colaboram com a nossa trajetória.
-    </p>
-    <div class="row g-4">
-      <!-- Parceiro 1 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/AmazoniaLOGO.png" alt="Associação SOS Amazônia" class="img-fluid">
+
+  <!-- Seção "Parcerias" -->
+  <section id="parcerias" class="py-5">
+    <div class="container px-5">
+      <h2 class="text-center mb-4">NOSSOS PARCEIROS</h2>
+      <p class="text-center mb-5">
+        Conheça as instituições e parceiros estratégicos que colaboram com a nossa trajetória.
+      </p>
+      
+      <!-- Versão Desktop: Flip Cards -->
+      <div class="row g-4 d-none d-sm-flex">
+        <!-- Parceiro 1 -->
+        <div class="col-6 col-md-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/AmazoniaLOGO.png" alt="SOS Amazônia" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>SOS Amazônia</h5>
+                <a href="https://sosamazonia.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
             </div>
-            <div class="flip-card-back">
-              <h5>SOS Amazônia</h5>
-              <a href="https://sosamazonia.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+          </div>
+        </div>
+        <!-- Parceiro 2 -->
+        <div class="col-6 col-md-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/IEBlogo.png" alt="Instituto IEB" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>Instituto IEB</h5>
+                <a href="https://wk.com.br/parceiro2" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parceiro 3 -->
+        <div class="col-6 col-md-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/IFTlogo.png" alt="Instituto IFT" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>Instituto IFT</h5>
+                <a href="https://www.ift.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parceiro 4 -->
+        <div class="col-6 col-md-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/ImazonLogo.png" alt="IMAZON" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>IMAZON</h5>
+                <a href="https://imazon.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Parceiro 2 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/IEBlogo.png" alt="Instituto de Estudos Socioeconômicos – INESC" class="img-fluid">
-            </div>
-            <div class="flip-card-back">
-              <h5>Instituto IEB</h5>
-              <a href="https://wk.com.br/parceiro2" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
-            </div>
+       <!-- Versão Mobile: Carousel -->
+       <div id="parceriasCarousel" class="carousel slide d-block d-sm-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active text-center">
+            <a href="https://sosamazonia.org.br" target="_blank" rel="noopener noreferrer">
+              <img src="img/AmazoniaLOGO.png" class="d-block mx-auto logo-img" alt="SOS Amazônia" style="max-height:70px;">
+            </a>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item text-center">
+            <a href="https://wk.com.br/parceiro2" target="_blank" rel="noopener noreferrer">
+              <img src="img/IEBlogo.png" class="d-block mx-auto logo-img" alt="Instituto IEB" style="max-height:70px;">
+            </a>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item text-center">
+            <a href="https://www.ift.org.br" target="_blank" rel="noopener noreferrer">
+              <img src="img/IFTlogo.png" class="d-block mx-auto logo-img" alt="Instituto IFT" style="max-height:70px;">
+            </a>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item text-center">
+            <a href="https://imazon.org.br" target="_blank" rel="noopener noreferrer">
+              <img src="img/ImazonLogo.png" class="d-block mx-auto logo-img" alt="IMAZON" style="max-height:70px;">
+            </a>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#parceriasCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#parceriasCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
-      <!-- Parceiro 3 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/IFTlogo.png" alt="Instituto Floresta Tropical – IFT" class="img-fluid">
-            </div>
-            <div class="flip-card-back">
-              <h5>Instituto IFT</h5>
-              <a href="https://www.ift.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Parceiro 4 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/ImazonLogo.png" alt="Instituto do Homem e Meio Ambiente da Amazônia – IMAZON" class="img-fluid">
-            </div>
-            <div class="flip-card-back">
-              <h5>IMAZON</h5>
-              <a href="https://imazon.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Adicione mais parceiros conforme necessário -->
     </div>
-  </div>
-</section>
+  </section>
+
 
 
 <footer id="footer" class=" text-light py-5">
@@ -444,8 +484,7 @@
     </div>
   </div>
 </footer>
-
-  <!-- Bootstrap Bundle JS (inclui Popper) -->
+  <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Script para alterar cor da navbar ao rolar a página -->
   <script>
@@ -459,37 +498,20 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-  // Aplica apenas se for mobile
-  if (window.innerWidth <= 576) {
-    const observerOptions = {
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Adiciona a classe "animate" e um sufixo de animação de acordo com o tipo
-          entry.target.classList.add('animate');
-          // Se for um botão, adiciona a classe scaleIn, senão fadeIn
-          if (entry.target.classList.contains('btn-saiba-mais') ||
-              entry.target.classList.contains('btn-solucoes')) {
-            entry.target.classList.add('scaleIn');
-          } else {
-            entry.target.classList.add('fadeIn');
-          }
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    // Seleciona as seções desejadas
-    document.querySelectorAll(
-      '.inicio-section, .sobre-nos, .nossas-solucoes, .areas-atendidas, #diferenciais, #parcerias, #footer, .btn-saiba-mais, .btn-solucoes'
-    ).forEach(element => {
-      observer.observe(element);
+      if (window.innerWidth <= 576) {
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate', entry.target.classList.contains('btn-saiba-mais') || entry.target.classList.contains('btn-solucoes') ? 'scaleIn' : 'fadeIn');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+        document.querySelectorAll('.inicio-section, .sobre-nos, .nossas-solucoes, .areas-atendidas, #diferenciais, #parcerias, #footer, .btn-saiba-mais, .btn-solucoes')
+                .forEach(element => { observer.observe(element); });
+      }
     });
-  }
-});
   </script>
 </body>
 </html>
