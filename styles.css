@@ -1,4 +1,4 @@
-corriga meu css que esta redundante html {
+ html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px; /* Compensa a altura da navbar fixa */
 }
@@ -13,7 +13,7 @@ body {
 
 /* Navbar customizada */
 .navbar-custom {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 8, 34, 1);
   transition: background-color 0.3s ease;
 }
 .navbar-custom.scrolled {
@@ -494,7 +494,7 @@ gap: 8px;
     /* Estilo das bolinhas do carousel */
     #parceriasCarousel .carousel-indicators {
       position: static; /* Tira o posicionamento absoluto */
-      margin-top: 10px; /* Espaço entre imagem e bolinhas */
+      margin-top: 19px; /* Espaço entre imagem e bolinhas */
       text-align: center; /* Centraliza */
     }
   
