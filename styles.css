@@ -1,6 +1,6 @@
  html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Compensa a altura da navbar fixa */
+  scroll-padding-top: 70px; 
 }
 
 body {
