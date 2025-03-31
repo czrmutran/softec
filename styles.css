@@ -491,6 +491,25 @@ gap: 8px;
 
 /* Ajuste responsivo dos botões (caso necessário) */
 @media (max-width: 576px) {
+    /* Estilo das bolinhas do carousel */
+    #parceriasCarousel .carousel-indicators {
+      position: static; /* Tira o posicionamento absoluto */
+      margin-top: 10px; /* Espaço entre imagem e bolinhas */
+      text-align: center; /* Centraliza */
+    }
+  
+    #parceriasCarousel .carousel-indicators [data-bs-target] {
+      background-color: rgba(0, 8, 34, 1);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 4px;
+      opacity: 0.5;
+    }
+  
+    #parceriasCarousel .carousel-indicators .active {
+      opacity: 1;
+    }
 .btn.btn-solucoes {
   font-size: 12px;
   padding: 10px 15px;
