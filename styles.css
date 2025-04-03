@@ -1,215 +1,667 @@
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 70px; /* Compensa a altura da navbar fixa */
-  }
+ html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; 
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   
-  body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  
-  /* Navbar customizada */
-  .navbar-custom {
-    background-color: rgb(0, 0, 0);
-    transition: background-color 0.3s ease;
-  }
-  .navbar-custom.scrolled {
-    background-color: #000822;
-  }
+}
+
+/* Navbar customizada */
+.navbar-custom {
+  background-color: rgba(0, 8, 34, 1);
+  transition: background-color 0.3s ease;
+}
+.navbar-custom.scrolled {
+  background-color: #000822;
+}
+.navbar-custom .navbar-brand img {
+  width: 100px;
+}
+.navbar-custom .nav-link {
+  font-size: 17px;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+.navbar-custom .nav-link:hover {
+  color: #f1f1f1ba !important;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+  margin-left: auto; /* Garante que o botão fique à direita */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .navbar-brand img {
+  width: 150px;
+}
+@media (max-width: 400px) {
   .navbar-custom .navbar-brand img {
-    width: 300px;
-  }
-  .navbar-custom .nav-link {
-    font-size: 17px;
-    color: #fff !important;
-    transition: color 0.3s ease;
-  }
-  .navbar-custom .nav-link:hover {
-    color: #f1f1f1ba !important;
+    width: 150px !important; /* reduz significativamente a logo */
+    margin-left: 4px;
+    margin-right: 120px;
   }
 
-  .navbar-toggler {
-    border-color: #fff;
-    margin-left: auto; /* Garante que o botão fique à direita */
+  .navbar-custom .navbar-toggler {
+    padding: 6px 10px !important;
+    font-size: 1rem !important; /* reduz tamanho do botão */
+    margin-left: 35px !important; /* reduz a margem para garantir alinhamento lateral */
   }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+  .navbar-custom .container {
+    padding: 0 8px !important; /* reduz padding lateral do container */
   }
-  
-  .navbar-custom .navbar-brand img {
-    width: 300px;
+}
+
+/* Reduz o tamanho do logo em dispositivos móveis */
+@media (max-width: 576px) {
+  .navbar-custom .btn-webmail-navbar {
+    padding: 0 !important;
+    margin-left: 0 !important;
+    font-size: 17px;
+    color: #fff !important;
   }
-  
-  /* Reduz o tamanho do logo em dispositivos móveis */
-  @media (max-width: 576px) {
-    .navbar-custom .btn-webmail-navbar {
-      padding: 0 !important;
-      margin-left: 0 !important;
-      font-size: 17px;
-      color: #fff !important;
-    }
-    .navbar-custom .navbar-nav {
-      justify-content: flex-start;
-    }
-    /* Centraliza títulos e parágrafos no mobile */
-    h1, h2, h3, h4, h5, h6, p {
-      text-align: center !important;
-    }
-    
-    /* Se o container do botão for flex, forçamos o alinhamento à esquerda */
-    .navbar-custom .d-flex {
-      justify-content: flex-start !important;
-    }
+  .navbar-custom .navbar-nav {
+    justify-content: flex-start;
   }
-  
-  
-  /* Seção Início (Hero) */
-  .inicio-section {
-    height: 100vh;
-    background: url('./img/fundoHero.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    margin-top: 70px;
+
+  /* Se o container do botão for flex, forçamos o alinhamento à esquerda */
+  .navbar-custom .d-flex {
+    justify-content: flex-start !important;
   }
-  
-  /* Limita a largura do bloco de conteúdo */
-  .titulo-container {
-    max-width: 600px; /* Ajuste conforme necessário */
+}
+/* Geral sessoes */
+@media (max-width: 576px) {
+section {
+  padding: 50px 15px;
+  overflow-x: hidden;
+}
+
+
+/* HERO MOBILE REFINADO */
+@media (max-width: 576px) {
+.inicio-section {
+  background-position: center;
+  background-size: cover;
+  padding: 100px 20px 70px;
+  text-align: left !important;
+  display: flex;
+  align-items: center;
+}
+.inicio-section h1 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.hero-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  padding: 0;
+  color: #f2f2f2;
+  margin-bottom: 25px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-saiba-mais {
+  width: 100%;
+  max-width: 300px;
+  font-size: 14px;
+  margin: 0;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+}
+
+/* Hero Desktop */
+.inicio-section {
+height: 100vh;
+background: url('./img/fundoHero.jpg') no-repeat center center;
+background-size: cover;
+display: flex;
+align-items: center;
+margin-top: 70px;
+}
+
+.inicio-section h1 {
+text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+.hero-subtitle {
+max-width: 740px;
+font-size: 1.1rem;
+line-height: 1.6;
+text-align: justify;
+text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.btn-saiba-mais {
+display: inline-block;
+padding: 12px 20px;
+background: linear-gradient(135deg, #000822e6, #000822e6);
+color: #ffffff;
+border: 2px solid transparent;
+border-radius: 10px;
+font-size: 14px;
+font-weight: 600;
+text-transform: uppercase;
+transition: all 0.3s ease;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+text-decoration: none;
+}
+
+.btn-saiba-mais:hover,
+.btn-saiba-mais:focus {
+background: #ffffff;
+color: #000000;
+border-color: #000822;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+text-decoration: none;
+}
+
+/* Seção Áreas Atendidas */
+.areas-atendidas {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.areas-atendidas h5 {
+  color: #000822;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+.areas-atendidas .btn-solucoes {
+  font-size: 13px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+/* Seção Diferenciais */
+#diferenciais {
+  background: linear-gradient(135deg, #000822, #1b2845);
+  border-radius: 12px;
+  color: #ffffff;
+  padding: 40px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#diferenciais h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#diferenciais .lead {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+#diferenciais .card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #000822;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+#diferenciais .card i {
+  color: #000822;
+  margin-bottom: 10px;
+}
+
+/* Seção Parcerias */
+#parcerias {
+  padding: 40px 15px;
+  text-align: center;
+  border-radius: 12px;
+  background: #f2f5fa;
+}
+
+#parcerias h2 {
+  color: #000822;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#parcerias p {
+  font-size: 0.95rem;
+}
+
+.flip-card {
+  height: 130px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.flip-card img {
+  max-height: 60px;
+}
+
+.flip-card-back {
+  padding: 10px;
+}
+
+.flip-card-back h5 {
+  font-size: 14px;
+}
+
+.flip-card-back .btn {
+  font-size: 12px;
+}
+
+/* Footer aprimorado (já aplicado) */
+#footer {
+  padding: 40px 10px;
+  background: linear-gradient(135deg, #000822, #182948);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#footer h5 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #4b6c8c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#footer p,
+#footer a {
+  font-size: 13px;
+}
+
+#footer .form-control {
+  border-radius: 8px;
+}
+
+#footer .btn-outline-light {
+  width: 100%;
+  font-size: 13px;
+}
+}
+
+
+/* Seção Início (Hero) */
+.inicio-section {
+  height: 100vh;
+  background: url('./img/fundoHero.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+
+/* Limita a largura do bloco de conteúdo */
+.titulo-container {
+  max-width: 600px; /* Ajuste conforme necessário */
+}
+.inicio-section h1 {
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.683);
+}
+/* Estilo personalizado para o subtítulo */
+.hero-subtitle {
+  width: 100%;            /* Usa toda a largura disponível do elemento pai */
+  max-width: 740px;       /* Largura máxima definida */        /* Centraliza horizontalmente quando o pai tiver mais espaço */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Botão "Fale com nossa equipe" */
+.btn-saiba-mais {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #000822e6, #000822e6);
+  color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+
+.btn-saiba-mais:hover,
+.btn-saiba-mais:focus {
+  background: #ffffff;
+  color: #000000;
+  border-color: #000822;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+  /* Seção "Sobre Nós" */
+  .sobre-nos {
+    background-color: #ffffff;
+    padding: 80px 20px;
   }
-  .inicio-section h1 {
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.683);
+  .sobre-nos .container {
+    max-width: 800px;
+    margin: 0 auto;
   }
-  /* Estilo personalizado para o subtítulo */
-  .hero-subtitle {
-    width: 100%;            /* Usa toda a largura disponível do elemento pai */
-    max-width: 740px;       /* Largura máxima definida */        /* Centraliza horizontalmente quando o pai tiver mais espaço */
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
-  }
-  
-  
-  /* Botão "Fale com nossa equipe" */
-  .btn-saiba-mais {
-    display: inline-block;
-    padding: 12px 20px;
-    background: linear-gradient(135deg, #000822e6, #000822e6);
-    color: #ffffff;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
+  .sobre-nos h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000822e6;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    text-decoration: none; /* Remove o sublinhado */
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .sobre-nos p {
+
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
   
-  
-  .btn-saiba-mais:hover,
-  .btn-saiba-mais:focus {
-    background: #ffffff;
-    color: #000000;
-    border-color: #000822;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-  }
-    /* Seção "Sobre Nós" */
-    .sobre-nos {
-      background-color: #ffffff;
-      padding: 80px 20px;
-    }
-    .sobre-nos .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .sobre-nos h2 {
-      text-align: center;
-      font-size: 32px;
-      font-weight: bold;
-      color: #000822e6;
-      margin-bottom: 30px;
-      text-transform: uppercase;
-      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .sobre-nos p {
-  
-      font-size: 16px;
-      line-height: 1.8;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    }
-    
 /* Seção "Nossas Soluções" 1 */
 .nossas-solucoes {
-  background: linear-gradient(135deg, rgba(229, 229, 229, 0.708), rgba(255,255,255,0.9)),
-              url('./img/solucoes.svg') no-repeat center center;
-  background-size: cover;
-  padding: 80px 20px;
+background: linear-gradient(135deg, rgba(229, 229, 229, 0.708), rgba(255,255,255,0.9)),
+            url('./img/solucoes.svg') no-repeat center center;
+background-size: cover;
+padding: 80px 20px;
 }
 
 .nossas-solucoes .container {
-  max-width: 900px;
-  margin: 0 auto;
+max-width: 900px;
+margin: 0 auto;
 }
 
 .nossas-solucoes h2 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color: rgba(0, 8, 34, 1);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+text-align: center;
+font-size: 36px;
+font-weight: bold;
+color: rgba(0, 8, 34, 1);
+margin-bottom: 20px;
+text-transform: uppercase;
+letter-spacing: 2px;
 }
 
 .nossas-solucoes .intro-text {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: rgba(0, 8, 34, 0.9);
+text-align: center;
+font-size: 18px;
+margin-bottom: 30px;
+color: rgba(0, 8, 34, 0.9);
 }
 
 .nossas-solucoes p {
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  color: rgba(0, 8, 34, 0.8);
+font-size: 16px;
+line-height: 1.8;
+margin-bottom: 20px;
+color: rgba(0, 8, 34, 0.8);
 }
 
 /* Botão "Acessar Site Oficial da WK" */
 .btn-solucoes {
-  background-color: rgba(0, 8, 34, 1);
-  color: #fff;
-  border: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 8px;
+background-color: rgba(0, 8, 34, 1);
+color: #fff;
+border: none;
+font-weight: 600;
+text-transform: uppercase;
+transition: background-color 0.3s ease, color 0.3s ease;
+border-radius: 8px;
 }
 .btn-solucoes:hover {
-  background-color: #a7a7a798;
-  color: #fff;
-  text-decoration: none;
+background-color: #a7a7a798;
+color: #fff;
+text-decoration: none;
 }
 @media (max-width: 772px) {
-  /* Altera o layout da linha para coluna */
+/* Altera o layout da linha para coluna */
+#solucoes .row.align-items-center {
+  flex-direction: column;
+}
+/* Reordena a coluna da logo para aparecer primeiro e centraliza seu conteúdo */
+#solucoes .col-md-4 {
+  order: -1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Ajusta a imagem, se necessário */
+#solucoes .col-md-4 img {
+  max-height: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+  
+.areas-atendidas .btn.btn-solucoes {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 120px;       /* Largura reduzida */
+height: 120px;      /* Altura reduzida */
+padding: 10px;      /* Espaçamento interno menor */
+aspect-ratio: 1 / 1;/* Mantém o formato quadrado */
+
+}
+
+.areas-atendidas .btn.btn-solucoes i {
+font-size: 1.5rem;  /* Ícone um pouco menor */
+margin-bottom: 6px; /* Espaço entre o ícone e a legenda */
+}
+
+
+.areas-atendidas {
+background-color: #fff;
+}
+
+.areas-atendidas h5 {
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+color: rgba(0, 8, 34, 1);
+margin-bottom: 30px;
+text-transform: uppercase;
+}
+
+.btn.btn-solucoes {
+padding: 12px 20px;
+font-size: 14px;
+border-radius: 10px;
+}
+
+/* Adiciona ícones e espaçamento interno nos botões de área */
+.btn.btn-solucoes.d-flex {
+gap: 8px;
+}
+
+
+
+/* Ajuste responsivo dos botões (caso necessário) */
+@media (max-width: 576px) {
+    /* Estilo das bolinhas do carousel */
+    #parceriasCarousel .carousel-indicators {
+      position: static; /* Tira o posicionamento absoluto */
+      margin-top: 19px; /* Espaço entre imagem e bolinhas */
+      text-align: center; /* Centraliza */
+    }
+  
+    #parceriasCarousel .carousel-indicators [data-bs-target] {
+      background-color: rgba(0, 8, 34, 1);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 4px;
+      opacity: 0.5;
+    }
+  
+    #parceriasCarousel .carousel-indicators .active {
+      opacity: 1;
+    }
+.btn.btn-solucoes {
+  font-size: 12px;
+  padding: 10px 15px;
+}
+}
+
+#diferenciais {
+background-color: rgba(0, 8, 34, 1); /* Mesma cor do rodapé */
+padding: 80px 20px;
+}
+#diferenciais .text-white {
+color: #fff;
+}
+#diferenciais h2 {
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+letter-spacing: 2px;
+}
+
+#diferenciais p.lead {
+font-size: 16px;
+margin-bottom: 30px;
+color: #F1F1F1;
+}
+
+#diferenciais .card-body {
+text-align: center;
+}
+#diferenciais .card-body i {
+font-size: 3rem;
+color: rgba(0, 8, 34, 1);
+margin-bottom: 15px;
+}
+
+#parcerias {
+background-color: #fff;
+padding: 80px 20px;
+}
+
+#parcerias h2 {
+text-align: center;
+font-size: 32px;
+font-weight: bold;
+color: rgba(0,8,34,1);
+margin-bottom: 30px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+#parcerias p {
+text-align: center;
+font-size: 16px;
+color: #333;
+margin-bottom: 30px;
+}
+.partner-logo {
+transition: transform 0.3s ease;
+max-height: 100px;
+filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+/* Estilização dos Flip Cards */
+.flip-card {
+background-color: transparent;
+width: 100%;
+height: 200px;
+perspective: 1000px;
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transition: transform 1.5s;
+transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border: 1px solid #ddd;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 10px;
+}
+
+.flip-card-front {
+background-color: #fff;
+}
+
+.flip-card-back {
+background-color: rgba(0, 8, 34, 1);
+color: #fff;
+transform: rotateY(180deg);
+}
+
+/* Footer */
+#footer{
+  background-color:rgba(0, 8, 34, 1) ;
+}
+#footer h5 {
+  margin-bottom: 20px;
+}
+#footer p,
+#footer a {
+  margin-bottom: 10px;
+}
+.footer-col {
+  margin-bottom: 20px;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+/* Garante que o texto dos placeholders fique branco e bem visível */
+.form-control::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  /* Centraliza os textos do cabeçalho da seção "Nossas Soluções" */
+  #solucoes .section-title,
+  #solucoes .section-subtitle {
+    text-align: center !important;
+  }
+  
+  /* Reordena os elementos da linha para que a coluna com a logo venha primeiro */
   #solucoes .row.align-items-center {
     flex-direction: column;
   }
-  /* Reordena a coluna da logo para aparecer primeiro e centraliza seu conteúdo */
+  
+  /* Ajusta a coluna da logo: coloca-a acima e centraliza */
   #solucoes .col-md-4 {
     order: -1;
     text-align: center;
     margin-bottom: 20px;
   }
-  /* Ajusta a imagem, se necessário */
+  
+  /* Reduz o tamanho da logo da WK */
   #solucoes .col-md-4 img {
     max-height: 30px;
     display: block;
@@ -218,272 +670,183 @@ html {
   }
 }
 
-    
-.areas-atendidas .btn.btn-solucoes {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 120px;       /* Largura reduzida */
-  height: 120px;      /* Altura reduzida */
-  padding: 10px;      /* Espaçamento interno menor */
-  aspect-ratio: 1 / 1;/* Mantém o formato quadrado */
-  
-}
-
-.areas-atendidas .btn.btn-solucoes i {
-  font-size: 1.5rem;  /* Ícone um pouco menor */
-  margin-bottom: 6px; /* Espaço entre o ícone e a legenda */
-}
-
-
-.areas-atendidas {
-  background-color: #fff;
-}
-
-.areas-atendidas h5 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: rgba(0, 8, 34, 1);
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-.btn.btn-solucoes {
-  padding: 12px 20px;
-  font-size: 14px;
-  border-radius: 10px;
-}
-
-/* Adiciona ícones e espaçamento interno nos botões de área */
-.btn.btn-solucoes.d-flex {
-  gap: 8px;
-}
 
 
 
-/* Ajuste responsivo dos botões (caso necessário) */
-@media (max-width: 576px) {
-  .btn.btn-solucoes {
-    font-size: 12px;
-    padding: 10px 15px;
-  }
-}
 
-#diferenciais {
-  background-color: rgba(0, 8, 34, 1); /* Mesma cor do rodapé */
-  padding: 80px 20px;
-}
-#diferenciais .text-white {
-  color: #fff;
-}
-#diferenciais h2 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
 
-#diferenciais p.lead {
-  font-size: 16px;
-  margin-bottom: 30px;
-  color: #F1F1F1;
-}
 
-#diferenciais .card-body {
-  text-align: center;
-}
-#diferenciais .card-body i {
-  font-size: 3rem;
-  color: rgba(0, 8, 34, 1);
-  margin-bottom: 15px;
-}
 
-#parcerias {
-  background-color: #fff;
-  padding: 80px 20px;
-}
 
-#parcerias h2 {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: rgba(0,8,34,1);
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
-#parcerias p {
-  text-align: center;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 30px;
-}
-.partner-logo {
-  transition: transform 0.3s ease;
-  max-height: 100px;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-}
 
-/* Estilização dos Flip Cards */
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 200px;
-  perspective: 1000px;
-}
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-transition: transform 1.5s;
-  transform-style: preserve-3d;
-}
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
 
-.flip-card-front {
-  background-color: #fff;
-}
 
-.flip-card-back {
-  background-color: rgba(0, 8, 34, 1);
-  color: #fff;
-  transform: rotateY(180deg);
-}
 
-  /* Footer */
-  #footer{
-    background-color:rgba(0, 8, 34, 1) ;
-  }
-  #footer h5 {
-    margin-bottom: 20px;
-  }
-  #footer p,
-  #footer a {
-    margin-bottom: 10px;
-  }
-  .footer-col {
-    margin-bottom: 20px;
-  }
-  .form-control {
-    margin-bottom: 10px;
-  }
-  /* Garante que o texto dos placeholders fique branco e bem visível */
-  .form-control::placeholder {
-    color: #fff;
-    opacity: 1;
-  }
-  
-  @media (max-width: 576px) {
-    /* Centraliza os textos do cabeçalho da seção "Nossas Soluções" */
-    #solucoes .section-title,
-    #solucoes .section-subtitle {
-      text-align: center !important;
-    }
-    
-    /* Reordena os elementos da linha para que a coluna com a logo venha primeiro */
-    #solucoes .row.align-items-center {
-      flex-direction: column;
-    }
-    
-    /* Ajusta a coluna da logo: coloca-a acima e centraliza */
-    #solucoes .col-md-4 {
-      order: -1;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    /* Reduz o tamanho da logo da WK */
-    #solucoes .col-md-4 img {
-      max-height: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
- 
+
+
+
+
+
+
+
+
+
+
+
 /* Define animações keyframes */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
 }
 
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+to {
+  opacity: 1;
+  transform: scale(1);
+}
 }
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
 }
 
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+from {
+  opacity: 0;
+  transform: scale(0.9);
+}
+to {
+  opacity: 1;
+  transform: scale(1);
+}
 }
 
 /* Em mobile, quando o elemento tiver a classe "animate", aplica a animação */
 @media (max-width: 576px) {
-  .animate.fadeIn {
-    animation: fadeInUp 0.8s ease-out both;
-  }
-  .animate.scaleIn {
-    animation: scaleIn 0.8s ease-out both;
-  }
+.animate.fadeIn {
+  animation: fadeInUp 0.8s ease-out both;
+}
+.animate.scaleIn {
+  animation: scaleIn 0.8s ease-out both;
+}
+}
+/* Centralizar todos os botões do rodapé em mobile */
+@media (max-width: 576px) {
+#footer .btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer form {
+  text-align: center;
+}
+}
+
+@media (max-width: 576px) {
+#footer a[href^="tel:"] {
+  color: #ffffff !important;
+  text-decoration: none;
+}
 }
 
 
 
 
 
+/* Estilos para Footer Mobile */
+@media (max-width: 576px) {
+#footer {
+  padding: 40px 15px;
+  text-align: center !important;
+}
+
+#footer .footer-col,
+#footer .col-md-3 {
+  margin-bottom: 25px;
+  text-align: center !important;
+}
+
+#footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#footer p,
+#footer a {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+#footer .btn-outline-light {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#footer .form-control {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff !important;
+}
+
+#footer .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer iframe {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#footer .small {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+#footer .fa-solid {
+  margin-right: 6px;
+}
+
+/* Melhorando espaçamento entre elementos */
+#footer .row {
+  row-gap: 20px;
+}
+
+/* Centralizando os ícones e texto */
+#footer .col-md-3 i {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+}
 
 
 
-  
-  

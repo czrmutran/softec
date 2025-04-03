@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fff">
+
+  <!-- Cor da barra de status no Android e navegadores modernos -->
+  <meta name="theme-color" content="#000822">
+
+  <!-- Cor da barra de status no Safari iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Softec Informática</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +28,7 @@
   <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand" href="#inicio">
-        <img src="./img/logo-softec.png" alt="Softec Informática">
+        <img src="./img/SoftecLogoo.png" alt="Softec Informática">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
@@ -48,12 +54,14 @@
     <div class="container px-5 px-md-3">
       <div class="row">
         <div class="col-lg-8 col-md-10 col-12 text-start text-light">
-          <h1 class="d-none d-md-block display-5 fw-bold mb-4 ">Bem-Vindo À Softec Informática!</h1>
-          <h1 class="d-md-none display-5 fw-bold mb-4 ">Bem-Vindo À Softec Informática!</h1>
+          <h1 class="d-none d-md-block display-5 fw-bold mb-1 ">Bem-Vindo À Softec Informática!</h1>
+          <h1 class="d-md-none display-5 fw-bold mb-4 ">Bem-Vindo À Softec Informática</h1>
           <p class="lead mb-4 hero-subtitle">
             Na Softec, somos especialistas em automação contábil, financeira, fiscal e patrimonial. Nossa missão é proporcionar eficiência, segurança e agilidade aos processos dos nossos clientes. Acreditamos que a tecnologia é uma aliada no crescimento e sucesso de cada empresa.
           </p>
-          <a href="#footer" class="btn-saiba-mais">FALE COM NOSSA EQUIPE</a>
+          <div class="text-start text-md-start text-center">
+            <a href="#footer" class="btn-saiba-mais">FALE COM NOSSA EQUIPE</a>
+          </div>          
         </div>
       </div>
     </div>
@@ -82,14 +90,14 @@
 
 
  <!-- Seção "Nossas Soluções" -->
- <section id="solucoes" class="nossas-solucoes py-9">
+ <section id="solucoes" class="nossas-solucoes py-9 mt-5 mb-5">
   <div class="container">
     <!-- Cabeçalho com logo -->
     <div class="row align-items-center mb-2">
       <div class="col-md-8">
         <h2 class="section-title text-start mb-2">SOLUÇÕES</h2>
         <p class="section-subtitle text-start" style="max-width: 600px;">
-          Software completo com mais de 30 módulos, desenvolvido para atender as necessidades de empresas de todos os portes e segmentos.
+          Software completo com diversos módulos para empresas de todos os portes.
         </p>
       </div>
       <div class="col-md-4 text-end">
@@ -115,7 +123,7 @@
 </section>
 
 <!-- Seção "Áreas Atendidas" -->
-<section id="areas-atendidas" class="areas-atendidas mt-5">
+<section id="areas-atendidas" class="areas-atendidas mt-5 mb-5">
   <div class="container">
     <h5 class="text-center mb-5">Conheça todas as áreas atendidas pelo ERP da WK:</h5>
     <div class="row justify-content-center">
@@ -270,7 +278,7 @@
 <section id="diferenciais">
   <div class="container px-5">
     <div class="text-center text-white mb-2">
-      <h2>POR QUE ESCOLHER A SOFTEC?</h2>
+      <h2>VANTAGENS DA SOFTEC?</h2>
       <p class="lead">Inovação, eficiência e suporte especializado para transformar o seu negócio.</p>
     </div>
     <div class="row g-4">
@@ -317,75 +325,130 @@
     </div>
   </div>
 </section>
-
-<!-- Seção Parcerias - Flip Cards -->
-<section id="parcerias" class="py-5 ">
-  <div class="container px-5">
-    <h2 class="text-center mb-4">NOSSOS PARCEIROS</h2>
-    <p class="text-center mb-5">
-      Conheça as instituições e parceiros estratégicos que colaboram com a nossa trajetória.
-    </p>
-    <div class="row g-4">
-      <!-- Parceiro 1 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/AmazoniaLOGO.png" alt="Associação SOS Amazônia" class="img-fluid">
-            </div>
-            <div class="flip-card-back">
-              <h5>Associação SOS Amazônia</h5>
-              <a href="https://sosamazonia.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Parceiro 2 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="https://iieb.org.br" alt="Instituto de Estudos Socioeconômicos – INESC" class="img-fluid">
-            </div>
-            <div class="flip-card-back">
-              <h5>Instituto IEB</h5>
-              <a href="https://wk.com.br/parceiro2" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+  <!-- Seção "Parcerias" -->
+  <section id="parcerias" class="py-5">
+    <div class="container px-5">
+      <h2 class="text-center mb-4">NOSSOS PARCEIROS</h2>
+      <p class="text-center mb-5">
+        Conheça as instituições e parceiros estratégicos que colaboram com a nossa trajetória.
+      </p>
+      <!-- Versão Desktop: Flip Cards -->
+      <div class="row g-4 d-none d-sm-flex">
+        <!-- Parceiro 1 -->
+       <div class="col" style="flex: 0 0 20%;">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/AmazoniaLOGO.png" alt="SOS Amazônia" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>SOS Amazônia</h5>
+                <a href="https://sosamazonia.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Parceiro 3 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/IFTLogo.png" alt="Instituto Floresta Tropical – IFT" class="img-fluid">
-            </div>
-            <div class="flip-card-back">
-              <h5>Instituto IFT</h5>
-              <a href="https://www.ift.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Parceiro 4 -->
-      <div class="col-6 col-md-3">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/ImazonLogo.png" alt="Instituto do Homem e Meio Ambiente da Amazônia – IMAZON" class="img-fluid">
-            </div>
-            <div class="flip-card-back">
-              <h5>IMAZON</h5>
-              <a href="https://imazon.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+        <!-- Parceiro 2 -->
+       <div class="col" style="flex: 0 0 20%;">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/IEBlogo.png" alt="Instituto IEB" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>Instituto IEB</h5>
+                <a href="https://www.iieb.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Parceiro 3 -->
+       <div class="col" style="flex: 0 0 20%;">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/IFTlogo.png" alt="Instituto IFT" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>Instituto IFT</h5>
+                <a href="https://www.ift.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parceiro 4 -->
+       <div class="col" style="flex: 0 0 20%;">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/ImazonLogo.png" alt="IMAZON" class="img-fluid">
+              </div>
+              <div class="flip-card-back">
+                <h5>IMAZON</h5>
+                <a href="https://imazon.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parceiro 5 -->
+<div class="col" style="flex: 0 0 20%;">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/inesclogo.png" alt="Inesc" class="img-fluid">
       </div>
-      <!-- Adicione mais parceiros conforme necessário -->
+      <div class="flip-card-back">
+        <h5>Inesc</h5>
+        <a href="https://www.inesc.org.br" class="btn btn-sm btn-outline-light mt-2" target="_blank" rel="noopener noreferrer">Visitar</a>
+      </div>
     </div>
   </div>
-</section>
+</div>
+      </div>
+       <!-- Versão Mobile: Carousel -->
+       <div id="parceriasCarousel" class="carousel slide d-block d-sm-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active text-center">
+            <a href="https://sosamazonia.org.br" target="_blank" rel="noopener noreferrer">
+              <img src="img/AmazoniaLOGO.png" class="d-block mx-auto logo-img" alt="SOS Amazônia" style="max-height:70px;">
+            </a>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item text-center">
+            <a href="https://wk.com.br/parceiro2" target="_blank" rel="noopener noreferrer">
+              <img src="img/IEBlogo.png" class="d-block mx-auto logo-img" alt="Instituto IEB" style="max-height:70px;">
+            </a>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item text-center">
+            <a href="https://www.ift.org.br" target="_blank" rel="noopener noreferrer">
+              <img src="img/IFTlogo.png" class="d-block mx-auto logo-img" alt="Instituto IFT" style="max-height:70px;">
+            </a>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item text-center">
+            <a href="https://imazon.org.br" target="_blank" rel="noopener noreferrer">
+              <img src="img/ImazonLogo.png" class="d-block mx-auto logo-img" alt="IMAZON" style="max-height:70px;">
+            </a>
+          </div>
+          <div class="carousel-item text-center">
+            <a href="https://www.inesc.org.br" target="_blank" rel="noopener noreferrer">
+              <img src="img/inesclogo.png" class="d-block mx-auto logo-img" alt="Inesc" style="max-height:70px;">
+            </a>
+          </div>
+        </div>
+      <!-- Indicadores (bolinhas azuis escuras) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#parceriasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#parceriasCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#parceriasCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#parceriasCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#parceriasCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    </div>
+  </section>
+
 
 
 <footer id="footer" class=" text-light py-5">
@@ -395,8 +458,8 @@
       <div class="col-md-3 footer-col">
         <h5>Informações</h5>
         <p><i class="fa-solid fa-location-dot"></i> Trav. Quintino Bocaiuva, 2624 – Sala/Altos - Cremação - Cep 66.045-320 - Belém-PA</p>
-        <p><i class="fa-solid fa-phone"></i> (91) 98843-5190</p>
         <p><i class="fa-solid fa-envelope"></i> softec@softec-pa.com.br</p>
+        <p><i class="fa-solid fa-phone"></i> (91) 98843-5190</p>
       </div>
       <!-- Entre em Contato -->
       <div class="col-md-3 mb-4">
@@ -442,8 +505,7 @@
     </div>
   </div>
 </footer>
-
-  <!-- Bootstrap Bundle JS (inclui Popper) -->
+  <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Script para alterar cor da navbar ao rolar a página -->
   <script>
@@ -457,37 +519,20 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-  // Aplica apenas se for mobile
-  if (window.innerWidth <= 576) {
-    const observerOptions = {
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Adiciona a classe "animate" e um sufixo de animação de acordo com o tipo
-          entry.target.classList.add('animate');
-          // Se for um botão, adiciona a classe scaleIn, senão fadeIn
-          if (entry.target.classList.contains('btn-saiba-mais') ||
-              entry.target.classList.contains('btn-solucoes')) {
-            entry.target.classList.add('scaleIn');
-          } else {
-            entry.target.classList.add('fadeIn');
-          }
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    // Seleciona as seções desejadas
-    document.querySelectorAll(
-      '.inicio-section, .sobre-nos, .nossas-solucoes, .areas-atendidas, #diferenciais, #parcerias, #footer, .btn-saiba-mais, .btn-solucoes'
-    ).forEach(element => {
-      observer.observe(element);
+      if (window.innerWidth <= 576) {
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate', entry.target.classList.contains('btn-saiba-mais') || entry.target.classList.contains('btn-solucoes') ? 'scaleIn' : 'fadeIn');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+        document.querySelectorAll('.inicio-section, .sobre-nos, .nossas-solucoes, .areas-atendidas, #diferenciais, #parcerias, #footer, .btn-saiba-mais, .btn-solucoes')
+                .forEach(element => { observer.observe(element); });
+      }
     });
-  }
-});
   </script>
 </body>
 </html>
